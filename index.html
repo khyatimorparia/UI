@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fill sticky">
+    <div class="container">
+      <!-- <a href="index.html" class="navabar-brand text-white">   New</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link"> <i class="fas fa-plus"></i> New</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fas fa-save"></i>  Save</a>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link"><i class="fas fa-trash"></i> Delete</a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fas fa-download"></i> Export to PDF</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fas fa-money"></i> Pay Detail</a>
+         </li>
+         <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fas fa-times"></i> Close</a>
+       </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+   
+  <div class="container">
+  <!-- MultiStep Form -->
+  <body>
+
+<section>
+    <div class="profile">
+<div class="row">
+<div class="col-md-3 padding">
+    <div class="card">
+      <h4>Aryansh Phatangare</h4>
+    
+        <img src="./img/1.png" alt="">
+     
+        <form>
+          <label for="file"></label>
+          <input type="file" id="file" name="file" ><br>
+          <br>
+          <input type="submit" id="submit">
+          <br>
+        </form>
+        <p class="bold">Roster Status</p>
+        <a href="#" class="text-primary small">Last flight on <span style="color:black"> : 14 Jun 2021</span></a>
+        <a href="#" class="text-primary small">Arrival at<span style="color: black;">: VABB</span></a> 
+        <a href="#" class="text-primary small">Location/city <span style="color: black">: Mumbai</span></a>
+        <br>
+        <!-- <p><button>Contact</button></p> -->
+      </div>
+</div>
+    <div class="col-md-3 ">
+        <div class="formbody">
+        <form id="msform" method="POST" action="/">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">Crew Details</li>
+                <li>FTDL Details</li>
+                <li>Groups</li>
+                <li>Training and documents</li>
+
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">Crew Details</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Name" required/>
+                <label for="nationality">Nationality</label>
+                <input type="text" name="nationality" placeholder="Nationality"required/>
+                <label for="Designation">Designation</label>
+                <!-- <input type="text" name="Designation" placeholder="Designation"required/> -->
+                <select name="designation"  >
+                  <option value="Select" >Select Designation </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label for="phone">Mobile Number</label>
+                <input type="text" name="phone" placeholder="Mobile number"required/>
+                <label for="date">Date of Birth</label>
+                <input type="date" name="date" placeholder="Date of Birth"required/>
+                <label for="dateofjoining">Date of Joining</label>
+                <input type="date" name="dateofjoining" placeholder="Date of Joining"required/>
+                <div class="row">
+                    <div class="col-md-6">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label> 
+            </div>
+                <div class="col-md-6">
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label></div>
+           
+            </div>
+
+          
+            </div>
+            <div class="col-md-6">
+                <label for="code">Code</label>
+                <input type="text" name="code" placeholder="Code" required/>
+                <label for="city">City</label>
+                <!-- <input type="text" name="lname" placeholder="City"required/> -->
+                <select name="city"  >
+                  <option value="Select" >Select City</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label for="duty">On duty as</label>
+                <input type="text" name="duty" placeholder="On duty as"required/>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email"required/>
+                <label for="passport">Passport</label>
+                <input type="text" name="passport" placeholder="Passport"required/>
+                <div class="row pt-1">
+                  <div class="col-md-6 ">
+                <label for="service">Not in service</label> 
+                <input type="checkbox" name="service" placeholder="Not in service"required/>   
+              </div>  
+              <div class="col-md-6 pt-4">
+                <input type="text" name="check" >
+              </div>
+              </div>
+            </div>
+     
+            <input type="submit" value="submit">
+            <input type="button" name="next" class="next action-button" value="Next"/>
+
+            
+         
+            
+        </form>
+        <!-- <a href="/view-feedbacks">View feedbacks</a> -->
+
+      </div>
+    </div>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="app.html"></script>
+<script src="mongo.js"></script>
+<link rel="stylesheet" type="text/css" href="public/css/style.css" />
+
+<script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+</body>
+  </html>
